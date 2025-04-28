@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDDA2F2A-CA9D-4428-B0F7-5BE5555551F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>snstreaming</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>snstreaming.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>snstreaming.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN.Designer.vb">
+      <DependentUpon>ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adventure.Designer.vb">
+      <DependentUpon>Adventure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anime.Designer.vb">
+      <DependentUpon>Anime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bio.Designer.vb">
+      <DependentUpon>bio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drama.Designer.vb">
+      <DependentUpon>drama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="drama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docu.Designer.vb">
+      <DependentUpon>docu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="docu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kidsandfamily.Designer.vb">
+      <DependentUpon>kidsandfamily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kidsandfamily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="New_Microsoft_Access_DatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>New_Microsoft_Access_DatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Romantic.Designer.vb">
+      <DependentUpon>Romantic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Romantic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scifi.Designer.vb">
+      <DependentUpon>scifi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scifi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub2.Designer.vb">
+      <DependentUpon>sub2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub3.Designer.vb">
+      <DependentUpon>sub3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub4.Designer.vb">
+      <DependentUpon>sub4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub5.Designer.vb">
+      <DependentUpon>sub5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub6.Designer.vb">
+      <DependentUpon>sub6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub7.Designer.vb">
+      <DependentUpon>sub7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sub7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thriller.Designer.vb">
+      <DependentUpon>Thriller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Thriller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="watch.Designer.vb">
+      <DependentUpon>watch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="watch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adventure.resx">
+      <DependentUpon>Adventure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anime.resx">
+      <DependentUpon>Anime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bio.resx">
+      <DependentUpon>bio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drama.resx">
+      <DependentUpon>drama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docu.resx">
+      <DependentUpon>docu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kidsandfamily.resx">
+      <DependentUpon>kidsandfamily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Romantic.resx">
+      <DependentUpon>Romantic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scifi.resx">
+      <DependentUpon>scifi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub2.resx">
+      <DependentUpon>sub2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub3.resx">
+      <DependentUpon>sub3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub4.resx">
+      <DependentUpon>sub4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub5.resx">
+      <DependentUpon>sub5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub6.resx">
+      <DependentUpon>sub6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sub7.resx">
+      <DependentUpon>sub7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thriller.resx">
+      <DependentUpon>Thriller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="watch.resx">
+      <DependentUpon>watch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="New_Microsoft_Access_DatabaseDataSet.xsc">
+      <DependentUpon>New_Microsoft_Access_DatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="New_Microsoft_Access_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>New_Microsoft_Access_DatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="New_Microsoft_Access_DatabaseDataSet.xss">
+      <DependentUpon>New_Microsoft_Access_DatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Photo_1678457658720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230314_153708.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230315_202314.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230218_194331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_23-02-19_19-52-28-055.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230307_154933.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230307_155040.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a74052a3d08565b21d5bdff8d7acbca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cca1428e223f9ea353486fe78bbfc22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\669c93a42f553686a7698cebc5658055.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6de035cd3307b513e9bfe88a1457826.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2884d3f2428ae0937aa89c8d5d2d2485.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56f01e6a36227fbb7f31aecf987d1733.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf74d1f2943f8063f568eceb2b88c7ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230310_153706.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20230310_1537061.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\539aaaf832fcf95ff1954851d9616c86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c055c73b7edfc97a94c23a63e07a60b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b0cb90edeab65ced23301702c2065233.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21d1fa64b73d8f323e355dc91df487be.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d36c00ca2badccaa51885bf6064a427e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ab3221ca230bfbb02bf497b33e734160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e63e21ebdba9a10143215b990c0d06ce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1906ba6db04be6064996cfd3fd256b22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8da75ccac5cfa3c3290db2da4fd1bf5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c68025df355b8f49ce0dd8ea721378c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61959e40777e8a378c93a5d744411bd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3cd68a1b0b354b525506aa7e9c3f6d19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63f6d93b008c4f6cd61e7e12daae1531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90972cb31bb22d7ae8a152a692c2e1e3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edd3e6bfff104191cfa96645ca8bc4aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d33371f74b0a142698c8beb972b2b13a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edfa806f2ed96ea1040661008e0079d7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8615957b66420a74337fa1902ae353a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dcc8bd1708c232fd04f18e1408dba6e4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28b27118686d9e24d727495c1eac455d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1b9e8cc132935ec851ea610e7b825b9c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d76fe8be7c3790c84fce47d1dc7a9980.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adb3ab583cf418299a2db33a9e9e76ba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39d18fb9b16225de4880a4887ac39704.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57f2af147475c63a908c837f2e2251e9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c27fa447b91d34933293f37a0b2f1a89.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6fb8e1e5a42e7bb3ea3aedb5f60b70d7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e642e9496e7b403f760c840dfee7a52d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a403dc8786ad0f982eba8211c011e567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\293dffe1434f3fdae667e06f537e5c82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\710ff2d98ca34e0f4a27eb7a2d5c0598.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30ded6e5df146ae178f8090b6ce5759c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\655f5546b71d0ce71a284737f36b1050.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13ce63119e9e7966586e1612b2ccecd6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8cbca88cc89f2f8254979217f61816ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03fde3551ca19ca8645d060fd8a0e52c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52ce16c099d0208e369f1ff4eab865ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea01d339a844c4a53589f1acfa799364.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90ca7e9b9b1f538a80f15a2b88efb7bc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c09f4062b02930ddb48998f5c1bdc51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4c37b97c9864310cf16cfe50d13510d7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06877ca186a5e5776b7c464cadc0f554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11593632667c99e9a76518d7f6bcdb32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f084cf70b3824d930c9ef91f5e458ac8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56eb4b988fee2d3665f80b00498c5dee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ffdfe54b932614fcf9d53b5c65e9a2d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0030.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20230317-WA0016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd45475b8e4d2a19ad622525c6b0f09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowdrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daydreamer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truebeauty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morethanfriends.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Callitlove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yehrishta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessproposal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crashcourse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truebeautyy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morethanfriend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessprop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squidgame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thedevilshour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farzi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aliceinborderland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allofusaredead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strangerthings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intothenight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wednesday.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manifest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moneyheist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glitch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Startrek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thelastofus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Theperipheral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Theexpanse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelbutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ll1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelbutton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ll11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ll12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tabb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tvv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Card2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carrdd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="New Microsoft Access Database.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\240_F_136255856_XGPHT6zyNJay48Dprr0bTVYb4XlUuSaI.jpg" />
+    <None Include="Resources\20230315_2023141.jpg" />
+    <None Include="Resources\20230322_160115.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
